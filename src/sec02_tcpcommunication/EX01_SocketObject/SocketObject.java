@@ -15,6 +15,7 @@ public class SocketObject {
 		Socket socket3 = new Socket("www.naver.com", 80, InetAddress.getLocalHost(), 10000);
 		Socket socket4 = new Socket(InetAddress.getByName("www.naver.com"), 80);
 		Socket socket5 = new Socket(InetAddress.getByName("www.naver.com"), 80, InetAddress.getLocalHost(), 20000);
+		//(참고) 만일 InetAddress.getLocalHost()에서 unreachable 예외가 발생하는 경우(다른 IP를 리턴하는 경우) InetAddress.getName("IP주소")로 직접 입력할 것
 		
 		//#2. Socket 메서드
 		//@connect 메서드 / 원격지 주소 정보 제공
